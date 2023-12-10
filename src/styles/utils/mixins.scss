@@ -1,0 +1,37 @@
+@mixin centered-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin centered-column-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin simple-shadow-down {
+    -webkit-box-shadow: 0px 5px 10px #0003;
+    -moz-box-shadow: 0px 5px 10px #0003;
+    box-shadow: 0px 5px 10px #0003;
+}
+
+@mixin simple-shadow-up {
+    -webkit-box-shadow: 0px -3px 10px #0003;
+    -moz-box-shadow: 0px -3px 10px #0003;
+    box-shadow: 0px -3px 10px #0003;
+}
+
+@mixin square-shadow {
+    -webkit-box-shadow: 0px 0px 8px 2px #0006;
+    -moz-box-shadow: 0px 0px 8px 2px #0006;
+    box-shadow: 0px 0px 8px 2px #0006;
+}
+
+@mixin text-shadow {
+    -webkit-text-shadow: 0px 5px 10px #0005;
+    -moz-text-shadow: 0px 5px 10px #0005;
+    text-shadow: 0px 5px 10px #0005;
+}

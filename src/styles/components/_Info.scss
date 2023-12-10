@@ -1,0 +1,169 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+%details-basic {
+    width: fit-content;
+    padding: 0 20px;
+    margin: 40px auto;
+    border: 3px solid $onyx;
+    border-radius: 30px;
+}
+
+.pokeDetails-Normal {
+    @extend %details-basic;
+    background-color: #A8A77A90;
+}
+
+.pokeDetails-Fire {
+    @extend %details-basic;
+    background-color: #EE813090;
+}
+
+.pokeDetails-Water {
+    @extend %details-basic;
+    background-color: #6390F090;
+}
+
+.pokeDetails-Grass {
+    @extend %details-basic;
+    background-color: #7AC74C90;
+}
+
+.pokeDetails-Electric {
+    @extend %details-basic;
+    background-color: #F7D02C90;
+}
+
+.pokeDetails-Ice {
+    @extend %details-basic;
+    background-color: #96D9D690;
+}
+
+.pokeDetails-Fighting {
+    @extend %details-basic;
+    background-color: #C22E2890;
+}
+
+.pokeDetails-Poison {
+    @extend %details-basic;
+    background-color: #A33EA190;
+}
+
+.pokeDetails-Ground {
+    @extend %details-basic;
+    background-color: #E2BF6590;
+}
+
+.pokeDetails-Flying {
+    @extend %details-basic;
+    background-color: #A98FF390;
+}
+
+.pokeDetails-Psychic {
+    @extend %details-basic;
+    background-color: #F9558790;
+}
+
+.pokeDetails-Bug {
+    @extend %details-basic;
+    background-color: #A6B91A90;
+}
+
+.pokeDetails-Rock{
+    @extend %details-basic;
+    background-color: #B6A13690;
+}
+
+.pokeDetails-Ghost {
+    @extend %details-basic;
+    background-color: #73579790;
+}
+
+.pokeDetails-Dragon {
+    @extend %details-basic;
+    background-color: #6F35FC90;
+}
+
+.pokeDetails-Dark {
+    @extend %details-basic;
+    background-color: #70574690;
+}
+
+.pokeDetails-Steel {
+    @extend %details-basic;
+    background-color: #B7B7CE90;
+}
+
+.pokeDetails-Fairy {
+    @extend %details-basic;
+    background-color: #D685AD90;
+}
+
+#det-name {
+    @include text-shadow;
+    font-size: 40px;
+    margin: 35px 0 0;
+}
+
+#det-image {
+    max-width: 70vw;
+    margin: 20px 0;
+}
+
+#det-types {
+    width: 100%;
+    margin: 15px 0 35px;
+}
+
+#types-title {
+    font-size: 35px;
+    margin: 0;
+}
+
+#det-typesContainter {
+    @include centered-content;
+    font-size: 25px;
+    p {
+        padding: 20px 20px 10px;
+        margin: 0;
+    }
+}
+
+#det-measures {
+    @include centered-content;
+    margin-bottom: 40px;
+
+    img {
+        width: auto;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+#heightContainer {
+    @include centered-content;
+    align-items: center;
+    margin-right: 35px;
+}
+
+#weightContainer {
+    @include centered-content;
+    align-items: center;
+}
+
+#det-statsTitle {
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+#det-statsContainer {
+    width: 100%;
+}
+
+#stats-chart {
+    max-width: 80vw;
+}

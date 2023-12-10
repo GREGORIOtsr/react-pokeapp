@@ -1,0 +1,22 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+%header-basic {
+    @include simple-shadow-down;
+    max-height: 10vh;
+    height: fit-content;
+    padding: 15px 0;
+    background-image: linear-gradient($dark-red, $red);
+}
+
+header {
+    @extend %header-basic
+}
+
+#pokeball-logo {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}

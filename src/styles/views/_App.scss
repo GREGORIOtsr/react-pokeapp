@@ -1,0 +1,13 @@
+@import '../utils/variables.scss';
+
+body {
+  font-family: $app-font-family;
+  background-color: $platinum;  
+}
+
+#root {
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}

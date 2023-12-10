@@ -1,0 +1,24 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+nav {
+
+    ul {
+        @include centered-content;
+        list-style-type: none;
+        margin: 5px 0;
+    }
+
+    li {
+        font-size: 22px;
+        margin: 0 10px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: #FFCB05;
+        text-shadow: 0 2px 5px #2A75BB70;
+    }
+
+}

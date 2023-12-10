@@ -1,0 +1,8 @@
+@import '../utils/mixins.scss';
+
+#listContainer {
+    @include centered-content;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

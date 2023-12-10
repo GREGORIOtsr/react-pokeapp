@@ -1,0 +1,10 @@
+@import '../utils/mixins.scss';
+
+%home-basic {
+    @include centered-column-content;
+    margin: 30px 10px;
+}
+
+#pokeHome {
+    @extend %home-basic;
+}

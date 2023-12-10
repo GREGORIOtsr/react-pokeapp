@@ -1,0 +1,138 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+%card-basic {
+    @include centered-column-content;
+    @include square-shadow;
+    justify-content: space-between;
+    height: fit-content;
+    width: fit-content;
+    min-height: 225px;
+    min-width: 100px;
+    border: 2px solid $red;
+    border-radius: 22px;
+    margin: 0px 10px 30px;
+    background-color: $silver;
+    transition: ease-in 1s;
+}
+
+%card-types {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid $red;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    p {
+        font-size: 15px;
+        padding: 0 5px;
+    }
+}
+
+.cardContainer {
+    @extend %card-basic;  
+}
+
+.card-image {
+    padding: 15px;
+    max-height: 120px;
+}
+
+.card-name {
+    @include text-shadow;
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: $onyx;
+    text-decoration: none;
+}
+
+.cardTypes-Normal {
+    @extend %card-types;
+    background-color: #A8A77A;
+}
+
+.cardTypes-Fire {
+    @extend %card-types;
+    background-color: #EE8130;
+}
+
+.cardTypes-Water {
+    @extend %card-types;
+    background-color: #6390F0;
+}
+
+.cardTypes-Grass {
+    @extend %card-types;
+    background-color: #7AC74C;
+}
+
+.cardTypes-Electric {
+    @extend %card-types;
+    background-color: #F7D02C;
+}
+
+.cardTypes-Ice {
+    @extend %card-types;
+    background-color: #96D9D6;
+}
+
+.cardTypes-Fighting {
+    @extend %card-types;
+    background-color: #C22E28;
+}
+
+.cardTypes-Poison {
+    @extend %card-types;
+    background-color: #A33EA1;
+}
+
+.cardTypes-Ground {
+    @extend %card-types;
+    background-color: #E2BF65;
+}
+
+.cardTypes-Flying {
+    @extend %card-types;
+    background-color: #A98FF3;
+}
+
+.cardTypes-Psychic {
+    @extend %card-types;
+    background-color: #F95587;
+}
+
+.cardTypes-Bug {
+    @extend %card-types;
+    background-color: #A6B91A;
+}
+
+.cardTypes-Rock{
+    @extend %card-types;
+    background-color: #B6A136;
+}
+
+.cardTypes-Ghost {
+    @extend %card-types;
+    background-color: #735797;
+}
+
+.cardTypes-Dragon {
+    @extend %card-types;
+    background-color: #6F35FC;
+}
+
+.cardTypes-Dark {
+    @extend %card-types;
+    background-color: #705746;
+}
+
+.cardTypes-Steel {
+    @extend %card-types;
+    background-color: #B7B7CE;
+}
+
+.cardTypes-Fairy {
+    @extend %card-types;
+    background-color: #D685AD;
+}
